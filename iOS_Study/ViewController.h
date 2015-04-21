@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction) buttenClick:(id)sender;
 
 @end
 

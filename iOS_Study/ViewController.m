@@ -38,4 +38,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction) buttenClick:(id)sender
+{
+    NSLog(@"按钮被拳击!");
+    
+    UIButton *button = (UIButton*)sender;
+    NSString *title = [NSString stringWithFormat:@"tag %d", button.tag];
+    NSString *message = [button currentTitle];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+}
+
 @end
